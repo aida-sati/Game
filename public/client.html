@@ -1,0 +1,103 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta lang="de" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seeschlach</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <script src="seeschlach.js" defer></script>
+    <script src="client.js" defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Seeschlach</h1>
+        <div id='begrüss'></div>
+        <table>
+            <tr>
+                <td>
+
+                    <div>
+                        <h2>Meine Flotte </h2>
+                        <ul>
+                            <li>
+                                <div class='schiff'><button id='vierD'>4-Deckeschiff</button>
+                                    <div id='counterD4'></div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class='schiff'><button id='dreiD'>3-Deckeschiff</button>
+                                    <div id='counterD3'></div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class='schiff'><button id='zweiD'>2-Deckeschiff</button>
+                                    <div id='counterD2'></div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class='schiff'><button id='einD'>1-Deckeschiff</button>
+                                    <div id='counterD1'></div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <td><button id='spielRestart'>Neu Spiel</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <div id='stellung'>
+                        <h3>Stellung des Schiff</h3>
+                        <label class="container">Horizontal
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Vertical
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2 id='meinInfo'></h2>
+                </td>
+            </tr>
+
+            <tr>
+
+
+
+
+                <td>
+                    <h1>Mein SpielFeld </h1>
+                    <div id=spielM>
+
+
+                    </div>
+                </td>
+
+                <td>
+                    <h1>Feld des Gegners </h1>
+                    <div id=spielF>
+
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
